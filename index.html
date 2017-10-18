@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Queue Sorter</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Heading section width 100% -->
+    <div id="page-header">
+      Queue App
+    </div>
+    <!-- Main section width 100% -->
+    <div id="main">
+      <!-- New customer section taking up half the page -->
+      <div class="customer section">
+        <!-- Heading for new customer -->
+        <div class="section-header">
+          New Customer
+        </div>
+        <!-- Services radio selection -->
+        <form>
+        <div class="services">
+          <div class="header">Services</div>
+          <input type="radio" name="service" value="Housing"/> Housing<br />
+          <input type="radio" name="service" value="Benefits"/> Benefits<br />
+          <input type="radio" name="service" value="Council Tax"/> Council Tax<br />
+          <input type="radio" name="service" value="Fly-tipping"/> Fly-tipping<br />
+          <input type="radio" name="service" value="Missed Bin"/> Missed Bin<br />
+        </div>
+        <!-- Buttons for customer type that open up different tabs below -->
+        <div class="customer-type">
+          <div class="type active">Citizen</div>
+          <div class="type">Organisation</div>
+          <div class="type">Anonymous</div>
+        </div>
+        <div class="details citizen active-page">
+          <!-- Title input -->
+          <div class="title">
+            <select>
+              <option>Ms</option>
+              <option>Miss</option>
+              <option>Mrs</option>
+              <option>Mr</option>
+              <option>Master</option>
+            </select>
+          </div>
+          <!-- First Name input -->
+          <div class="first-name">
+            First Name <br />
+            <input type="text" name="firstName" placeholder="First Name" />
+          </div>
+          <!-- Last Name input -->
+          <div class="surname">
+            Surname <br />
+            <input type="text" name="lastName" placeholder="Surname" />
+          </div>
+        </div>
+        <div class="details organisation">
+          <!-- Organisation Name -->
+          Organisation <br />
+          <input type="text" name="organisation" placeholder="Organisation Name" />
+        </div>
+        <!-- Submit button -->
+        <button class="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Queue section taking up half the page -->
+      <div class="queue section">
+        <!-- Heading for queue -->
+        <div class="section-header">
+          Customer Queue
+        </div>
+        <!-- Headings for queue table -->
+        <div class="queue-headings">
+          <span class="queue-heading id">#</span>
+          <span class="queue-heading">Type</span>
+          <span class="queue-heading">Name</span>
+          <span class="queue-heading">Service</span>
+          <span class="queue-heading">Queued At</span>
+        </div>
+        <!-- Customer details being queued -->
+        <div class="queue-customers">
+
+        </div>
+      </div>
+
+
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+body {
+  margin: 0px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+}
+
+#page-header {
+  width: 100%;
+  text-align: center;
+  background:#ADD8E6;
+  padding: 5px 0px 5px 0px;
+  font-size: 1.5em;
+}
+
+#main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  height: 90vh;
+}
+
+.section {
+  flex: 1;
+  margin: 10px;
+  border: solid #ADD8E6 1px;
+  border-radius: 1%;
+}
+
+.section-header {
+  padding: 10px;
+  background:#ADD8E6;
+}
+
+.services {
+  padding: 10px;
+}
+
+.header {
+  font-size:1.1em;
+  padding-bottom: 5px;
+}
+
+.customer-type {
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.type {
+  flex: 1;
+  padding: 5px;
+  background: #ADD8E6;
+  border: solid white 1px;
+  cursor: pointer;
+}
+
+.active {
+  background: #000080;
+  color: white;
+}
+
+.details {
+  padding: 10px;
+  display: none;
+}
+
+.active-page {
+  display: block;
+}
+
+.title, .first-name, .surname {
+  padding-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+  font-size: inherit;
+}
+
+.submit {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* QUEUE SECTION */
+
+.queue-headings {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.queue-heading {
+  flex: 1;
+  background: #000080;
+  color: white;
+  padding: 10px;
+}
+
+.id {
+  flex: 0.2 !important;
+}
+
+.queue-customer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.customer-info {
+  flex: 1;
+  padding: 10px;
+}
